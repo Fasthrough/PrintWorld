@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0e6ff;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #6a0dad;
+    width: 220px;
+    padding: 20px;
+    color: #fff;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+    background-color: #7a1ed3;
+}
+
+.bottom-links {
+    margin-top: auto;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f3f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+header input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.icons span {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.activity-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #e7d9f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6a0dad;
+}
+
+.details {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.sales, .top-categories, .stock-numbers, .stores-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sales h2, .top-categories h2, .bottom-section h3 {
+    margin-bottom: 10px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category {
+    background-color: #e7d9f0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #6a0dad;
+}
+
+.bottom-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stores-list ul {
+    list-style-type: none;
+}
+
+/* Hide all sections by default */
+.content-section {
+    display: none;
+}
+
+/* Show the active section */
+.content-section.active {
+    display: block;
+}
